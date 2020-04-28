@@ -11,25 +11,25 @@ const HomeWork = () => {
       title: 'Card Title',
       highLight: 'HighLight',
       crossOut: 'Cross Out',
-      star: 3,
-      content: '안녕하세요. 어쩌구저쩌구입니다.',
-      isRow: false
-    },
-    {
-      label: 'Card Label',
-      title: 'Card Title',
-      highLight: 'HighLight',
-      crossOut: 'Cross Out',
       star: '',
-      content: '안녕하세요. 어쩌구저쩌구입니다.',
+      content: '',
       isRow: false
     },
     {
       label: 'Card Label',
-      title: 'Card Title',
+      title: '',
       highLight: 'HighLight',
       crossOut: 'Cross Out',
       star: 1,
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      isRow: false
+    },
+    {
+      label: 'Card Label',
+      title: 'Card Title',
+      highLight: 'HighLight',
+      crossOut: 'Cross Out',
+      star: 5,
       content: '',
       isRow: true
     }
@@ -57,7 +57,7 @@ const Wrapper = styled.div`
   `;
 const CardContainer = styled.div`
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  flex-direction: row;
 `;
 export default HomeWork;
