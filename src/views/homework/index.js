@@ -38,9 +38,9 @@ const HomeWork = () => {
       <Wrapper>
         <h1>과제 1. 카드 UI </h1>
         <CardContainer>
-          {dummy.map(item => {
+          {dummy.map((item, index) => {
             return (
-              <Card item={item} />
+              <Card key={index} item={item} />
             )
           })}
         </CardContainer>

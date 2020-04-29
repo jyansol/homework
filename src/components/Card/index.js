@@ -50,10 +50,10 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  height:100%;
   img {
     object-fit: contain;
-    width: auto;
+    width: ${props => (props.row ? '460px' : '250px')};
     height: auto;
     max-width: 100%;
     max-height: 100%;
@@ -62,7 +62,7 @@ const ImageContainer = styled.div`
 const Div = styled.div``;
 const ContentContainer = styled.div`
   width: ${props => (props.row && '250px')};
-  padding: 15px;
+  padding: ${props => (props.row ? '0 15px' : '15px')};
 `;
 const StarContentContainer = styled(ContentContainer)`
   border-top: ${props => (props.row ? 'none' : '1px solid #bdbdbd')};

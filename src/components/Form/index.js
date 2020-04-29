@@ -77,6 +77,7 @@ const Textarea = styled.textarea`
   padding:5px;
   margin:0;
   resize: none;
+  overflow: hidden;
   border: ${props => (props.active ? '1px solid #42B0B5' : '1px solid #D4D4D4')};
   color: #323232;
   &:focus {
