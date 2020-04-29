@@ -26,9 +26,11 @@ const Card = ({ item }) => {
             </StarContentContainer>
           )}
           {content && (
-            <Content>
-              {content}
-            </Content>
+            <ContentContainer row={isRow}>
+              <Content>
+                {content}
+              </Content>
+            </ContentContainer>
           )}
         </Div>
       </Item>
@@ -36,6 +38,7 @@ const Card = ({ item }) => {
   )
 }
 const Item = styled.div`
+  width: ${props => (props.row ? '460px' : '250px')};
   display: flex;
   flex-direction: ${props => (props.row ? 'row' : 'column')};
   border: 1px solid #D9D8D8;
@@ -47,18 +50,18 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: ${props => (props.row ? '160px' : '200px')};
-  height: ${props => (props.row ? 'auto' : '200px')};
+  
   img {
-    width: 100%;
-    height: 100%;
+    object-fit: contain;
+    width: auto;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
   }
 `;
 const Div = styled.div``;
 const ContentContainer = styled.div`
-  width: auto;
+  width: ${props => (props.row && '250px')};
   padding: 15px;
 `;
 const StarContentContainer = styled(ContentContainer)`
@@ -92,12 +95,12 @@ const StarContainer = styled.div`
   font-size: 12px;
 `;
 const Content = styled.div`
-  width: 160px;
+  width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 14px;
   color: #323232;
-  padding: 0 15px 15px;
-  overflow:hidden; 
-  text-overflow:ellipsis;
-  white-space:nowrap;
 `;
 export default Card;

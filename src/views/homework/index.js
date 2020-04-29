@@ -11,7 +11,7 @@ const HomeWork = () => {
       title: 'Card Title',
       highLight: 'HighLight',
       crossOut: 'Cross Out',
-      star: '',
+      star: 1,
       content: '',
       isRow: false
     },
@@ -29,8 +29,7 @@ const HomeWork = () => {
       title: 'Card Title',
       highLight: 'HighLight',
       crossOut: 'Cross Out',
-      star: 5,
-      content: '',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       isRow: true
     }
   ]
@@ -52,7 +51,7 @@ const HomeWork = () => {
   )
 }
 const Wrapper = styled.div`
-  max-width: 772px;
+  max-width: 1000px;
   margin: 0 auto;
   `;
 const CardContainer = styled.div`
