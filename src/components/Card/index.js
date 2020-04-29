@@ -48,7 +48,7 @@ const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: ${props => (props.row ? '160px' : '200px')};
-  height: auto;
+  height: ${props => (props.row ? 'auto' : '200px')};
   img {
     width: 100%;
     height: 100%;

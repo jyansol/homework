@@ -38,7 +38,7 @@ const Form = () => {
       </Div>
       <Div>
         <ActiveButtonTextarea>
-          <Textarea placeholder="읽기 전용입니다." readOnly="readonly" maxlength={words.default}></Textarea>
+          <Textarea value="읽기 전용입니다." readonly="readonly" maxlength={words.default}></Textarea>
         </ActiveButtonTextarea>
       </Div>
       <Div>
